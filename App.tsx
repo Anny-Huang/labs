@@ -3,10 +3,9 @@ import { Button, StyleSheet, Text, View, Pressable} from 'react-native';
 
 export default function App() {
  let sampleList = [
-  { id: 1, name: 'John' },
-  { id: 2, name: 'Jane' },
-  { id: 3, name: 'Doe' },
-  { id: 4, name: 'Smith' },
+  { id: 1, name: 'An-Ni Huang' },
+  { id: 2, name: 'Vijay_Thapa Chhetri'},
+  { id: 3, name: 'Chen LI'}
  ]
 
   return (
