@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { ItemList } from '../components/itemList';
-import { StyleSheet, Text, View, Pressable } from 'react-native';
+import { Text, View, Pressable} from 'react-native';
 import React from 'react';
+import {router} from 'expo-router';
+import styles from '../components/style';
 
 
 export default function IndexPage() {
@@ -12,22 +14,10 @@ export default function IndexPage() {
         <Text style={styles.button}>Hello There</Text>
       </Pressable>
       <ItemList />
+      <Pressable onPress={() => router.push('/lab3') }>
+        <Text style={styles.button}>To Lab3</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: 5,
-    color: 'white',
-  },
-});

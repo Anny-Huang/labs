@@ -4,7 +4,7 @@ const fruits = ['apple', 'orange', 'mango'];
 
 export function ItemList() {
   return (
-    <View style={{ padding: 20, backgroundColor: '#f9f9f9', borderRadius: 10, marginTop: 20 }}>
+    <View style={{ padding: 20, backgroundColor: '#f9f9f9', borderRadius: 10, marginVertical: 5 }}>
       <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 10 }}>
         Fruit List
       </Text>
