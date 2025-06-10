@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
-import { Link } from "expo-router";
+import { View, Text, Pressable } from "react-native";
+import { router} from "expo-router";
 const fruits = ['apple', 'orange', 'mango'];
 
 export function ItemList() {
@@ -9,11 +9,16 @@ export function ItemList() {
         Fruit List
       </Text>
 
-      {fruits.map((fruit, index) => (
-        <Link key={index} href={`/${fruit}`}>
-          <Text style={{ fontSize: 18, marginVertical: 5 }}>{fruit}</Text>
-        </Link>
-      ))}
+      {fruits.map((fruit) => (
+        <Pressable
+          key={fruit}
+          onPress={() => { router.push(`/${fruit}`); }}
+        >
+          <Text style={{ fontSize: 18, marginVertical: 5, color: 'blue' }}>
+            {fruit}
+          </Text>
+        </Pressable>
+      ))}   
     </View>
   );
 }
