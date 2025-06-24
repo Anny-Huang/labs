@@ -17,6 +17,9 @@ export default function IndexPage() {
       <Pressable onPress={() => router.push('/lab3') }>
         <Text style={styles.button}>To Lab3</Text>
       </Pressable>
+       <Pressable onPress={() => router.push('/lab4') }>
+        <Text style={styles.button}>To Lab4</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </View>
   );
