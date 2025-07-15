@@ -51,12 +51,14 @@ export default function Lab4() {
 
           {openId === dest.id && (
             <View style={styles.details}>
-              <Text style={{color:"darkblue"}}>Price: ${dest.price}</Text>
-              <Text style={{color:"darkblue"}}>Average Temperature: {dest.average_yearly_temperature}</Text>
+              <Text style={{ color: "darkblue" }}>Price: ${dest.price}</Text>
+              <Text style={{ color: "darkblue" }}>
+                Average Temperature: {dest.average_yearly_temperature}
+              </Text>
 
               {wikiInfo[dest.id]?.thumbnail?.source && (
                 <Image
-                    source={{ uri: wikiInfo[dest.id]?.thumbnail?.source }}
+                  source={{ uri: wikiInfo[dest.id]?.thumbnail?.source }}
                   style={styles.image}
                 />
               )}
@@ -109,7 +111,7 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
   },
   description: {
-    fontFamily:"Arial",
+    fontFamily: "Arial",
     fontStyle: "italic",
     color: "gray",
     lineHeight: 25,
